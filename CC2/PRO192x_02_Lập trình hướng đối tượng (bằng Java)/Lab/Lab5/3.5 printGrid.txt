@@ -1,0 +1,13 @@
+public static void printGrid(int rows, int cols) {
+    for (int row = 1; row <= rows; row++) {
+        int count = 0;
+        for (int num = row; num <= (rows*cols); num += rows) {          
+            count += 1;
+            System.out.print(num);
+            if (count != cols) {
+                System.out.print(", ");
+            }
+        }
+        System.out.println();
+    }
+}

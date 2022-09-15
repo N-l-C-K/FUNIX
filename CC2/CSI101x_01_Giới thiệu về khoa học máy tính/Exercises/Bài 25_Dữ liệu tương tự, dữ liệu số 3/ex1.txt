@@ -1,0 +1,1 @@
+It omits some visual detail so as to take up fewer bytes

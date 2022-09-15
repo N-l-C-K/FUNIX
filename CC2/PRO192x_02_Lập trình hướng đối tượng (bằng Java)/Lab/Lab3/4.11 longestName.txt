@@ -1,0 +1,19 @@
+public static void longestName(Scanner console, int n) {
+    String longestName = "";
+    boolean tie = false;
+     for (int i = 1; i <= n; i++) {
+         System.out.print("name #" + i + "? ");
+         String name = console.next();
+         if (name.length() > longestName.length()) {
+             longestName = name;
+             tie = false;
+         } else if (name.length() == longestName.length()) {
+             tie = true;
+         }
+     }
+    String result = longestName.substring(0, 1).toUpperCase() + longestName.substring(1).toLowerCase();
+    System.out.println(result + "'s name is longest");
+    if (tie) {
+        System.out.println("(There was a tie!)");
+    }
+}

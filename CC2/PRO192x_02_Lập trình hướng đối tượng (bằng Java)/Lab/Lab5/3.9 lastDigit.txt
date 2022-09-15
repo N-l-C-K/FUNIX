@@ -1,0 +1,4 @@
+public static int lastDigit(int n) {
+    n = Math.abs(n);
+    return n%10;
+}

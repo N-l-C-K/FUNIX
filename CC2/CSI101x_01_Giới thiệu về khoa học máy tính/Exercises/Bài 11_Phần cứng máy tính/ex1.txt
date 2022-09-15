@@ -1,0 +1,1 @@
+The number of transistors which can fit on a chip doubles every 18-24 months.

@@ -1,0 +1,16 @@
+public static double stdev (int[] a) {
+    double sum = 0;
+    double avg = 0;
+    double top = 0;
+    for (int i = 0; i < a.length; i++) {
+        sum += a[i];
+    }
+    
+    avg = sum/a.length;
+    
+    for (int i = 0; i < a.length; i++) {
+        top += Math.pow(a[i] - avg, 2);
+    }
+    
+    return Math.sqrt(top / (a.length - 1));
+}

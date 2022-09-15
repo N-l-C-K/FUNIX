@@ -1,0 +1,18 @@
+image = new SimpleImage("redwood.jpg");
+back = new SimpleImage("pebbles.jpg");
+back.setSameSize(image);
+
+for (pixel: image) {
+  avg = (pixel.getRed() + pixel.getGreen() + pixel.getBlue())/3;
+  // your code here
+  if (pixel.getRed() > avg * 1.06) {
+     imageX = pixel.getX();
+     imageY = pixel.getY();
+     pixelBack = back.getPixel(imageX, imageY);
+     pixel.setRed(pixelBack.getRed());
+     pixel.setGreen(pixelBack.getGreen());
+     pixel.setBlue(pixelBack.getBlue());
+  }
+}
+
+print(image);

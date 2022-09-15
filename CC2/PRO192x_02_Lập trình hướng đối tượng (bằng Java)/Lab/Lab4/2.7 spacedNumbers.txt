@@ -1,0 +1,6 @@
+for (int row = 1; row <= 5; row++) {
+    for (int range = 1; range <= (5 - row); range++) {
+        System.out.print(" ");
+    }
+    System.out.println(row);
+}

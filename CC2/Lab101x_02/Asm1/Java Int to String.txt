@@ -1,0 +1,7 @@
+   //Write your code here
+    String s = String.valueOf(n);
+    // if (s == true) {
+    //     System.out.println("Good job");
+    // } else {
+    //     System.out.println("Wrong answer");
+    // }

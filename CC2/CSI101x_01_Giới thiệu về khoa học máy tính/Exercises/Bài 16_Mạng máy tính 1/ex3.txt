@@ -1,0 +1,1 @@
+Allow the recipient to detect if bytes received were corrupted in transit. 

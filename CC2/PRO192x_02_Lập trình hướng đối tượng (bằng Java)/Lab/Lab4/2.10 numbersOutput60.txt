@@ -1,0 +1,18 @@
+for (int row = 1; row <= 5; row++) {
+    for (int range = 1; range <= (5 - row); range++) {
+        System.out.print(" ");
+    }
+    for (int col = 1; col <= row ;col++) {
+        System.out.print(row);
+    }
+    System.out.println();
+}
+//for(int i = 1; i <= 5; i++) {
+//    for(int j = 5 - i; j > 0; j--)
+//        System.out.print(" ");
+//        
+//    for(int k = 1; k <= i; k++)
+//        System.out.print(i);
+//        
+//    System.out.println();
+//}

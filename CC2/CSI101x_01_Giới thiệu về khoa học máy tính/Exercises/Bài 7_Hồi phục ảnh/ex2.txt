@@ -1,0 +1,10 @@
+image = new SimpleImage("puzzle-copper.png");
+
+for (pixel: image) {
+  // Your code here
+  pixel.setRed(0);
+  pixel.setGreen(pixel.getGreen() * 10);
+  pixel.setBlue(pixel.getBlue() * 10);
+}
+
+print(image);

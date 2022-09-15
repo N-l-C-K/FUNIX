@@ -1,0 +1,5 @@
+public static int median (int[] arr) {
+    Arrays.sort(arr);
+    int result = arr.length/2;
+    return arr[result];
+}

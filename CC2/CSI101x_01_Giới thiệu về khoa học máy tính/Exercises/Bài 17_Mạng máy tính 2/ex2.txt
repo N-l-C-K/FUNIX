@@ -1,0 +1,1 @@
+Routers check the central internet-map which shows routes for all packets

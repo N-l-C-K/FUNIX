@@ -1,0 +1,1 @@
+Because even with noise added, it is relatively easy to distinguish the 0 representation from the 1 representation

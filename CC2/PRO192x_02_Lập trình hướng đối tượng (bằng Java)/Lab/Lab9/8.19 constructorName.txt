@@ -1,0 +1,6 @@
+public Name(String firstName, char middle, String lastName)
+{
+    this.firstName = firstName;
+    middleInitial = middle;
+    this.lastName = lastName;
+}

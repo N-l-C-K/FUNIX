@@ -1,0 +1,15 @@
+image = new SimpleImage("image3.png");
+back = new SimpleImage("thuongchau.jpg");
+back.setSameSize(image);
+
+for (pixel: image) {
+  if (pixel.getRed() == 255 && pixel.getGreen() == 255 && pixel.getBlue() == 255) {
+     imageX = pixel.getX();
+     imageY = pixel.getY();
+     pixelBack = back.getPixel(imageX, imageY);
+     pixel.setRed(pixelBack.getRed());
+     pixel.setGreen(pixelBack.getGreen());
+     pixel.setBlue(pixelBack.getBlue());
+  } 
+}
+print(image);

@@ -1,0 +1,7 @@
+table = new SimpleTable("baby-2010.csv");
+for (row: table) {
+  if(row.getField("gender") == "boy" && row.getField("name").endsWith("i")) {
+     print(row);
+  }
+  
+}

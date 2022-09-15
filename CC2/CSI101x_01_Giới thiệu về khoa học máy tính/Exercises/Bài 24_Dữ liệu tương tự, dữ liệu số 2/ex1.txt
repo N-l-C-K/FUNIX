@@ -1,0 +1,1 @@
+Convert the sound signal into a series of numbers representing the signal's difference from zero at each moment

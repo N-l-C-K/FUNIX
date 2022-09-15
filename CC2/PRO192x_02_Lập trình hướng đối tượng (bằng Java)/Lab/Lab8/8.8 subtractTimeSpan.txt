@@ -1,0 +1,10 @@
+public void subtract(TimeSpan span) {
+    this.hours = this.hours - span.hours;
+//    this.minutes = this.minutes - span.minutes;
+    if (this.minutes < span.minutes) {
+        this.hours -= 1;
+        this.minutes = 60 - this.minutes;
+    } else {
+        this.minutes = this.minutes - span.minutes;
+    }
+}

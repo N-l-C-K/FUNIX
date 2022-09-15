@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1</title>
+    <style>
+        p { font-weight: bold;}
+        div { display: none;}
+    </style>
+</head>
+<body>
+
+    <p id="name"></p>
+    <p id="city"></p>
+    <p id="mobile"></p>
+    <p id="email"></p>
+    <p id="job"></p>
+
+    <div id="myDiv">
+        <button>Bước tiếp theo</button>
+    </div>
+
+    <script>
+        function notify() { //Tạo hàm tên là notify
+            alert("Chào mừng bạn đến với ứng dụng JavaScript đầu tiên"); 
+
+            //Gán giá trị được người dùng nhập vào các biến tương ứng                                                              
+            var name = prompt("Hãy nhập tên của bạn");                          
+            var city = prompt("Hãy nhập nhập thành phố bạn đang sống");       
+            var mobile = prompt("Hãy nhập số điện thoại của bạn");              
+            var email = prompt("Hãy nhập địa chỉ email của bạn");
+            var job = prompt("Hãy nhập nghề nghiệp của bạn");                
+
+            //Gán giá trị từ các biến trên vào các thẻ p
+            document.getElementById("name").innerHTML = "Tên: " + name;
+            document.getElementById("city").innerHTML = "Thành phố: " + city;
+            document.getElementById("mobile").innerHTML ="Số điện thoại: " + mobile;
+            document.getElementById("email").innerHTML = "Email: " + email;
+            document.getElementById("job").innerHTML = "Nghề nghiệp: " + job;
+        }
+
+        document.getElementById("myDiv").style.display = "block"; //Thay đổi style của thẻ div có id="myDiv" thành display: block;
+        notify(); //Gọi hàm notify()
+    </script>
+</body>
+</html>

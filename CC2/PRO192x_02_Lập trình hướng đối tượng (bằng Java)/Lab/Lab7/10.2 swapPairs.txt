@@ -1,0 +1,7 @@
+public static void swapPairs (ArrayList<String> myList) {
+    for (int i = 0; i <= myList.size() - 2; i+=2) {
+        String str = myList.get(i);
+        myList.set(i, myList.get(i + 1));
+        myList.set(i+1, str);
+    }
+}

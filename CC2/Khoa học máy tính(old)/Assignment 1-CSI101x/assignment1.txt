@@ -1,0 +1,87 @@
+image = new SimpleImage("flowers.jpg");
+
+width=image.getWidth()
+height=image.getHeight()  
+
+for (i = 0; i < 2000; i++) {
+ x = Math.floor(Math.random() * (width - 1));
+ y = Math.floor(Math.random() * (height - 1));
+ pixel = image.getPixel(x, y);
+ pixel.setRed(255);
+ pixel.setGreen(255);
+ pixel.setBlue(255);
+}
+for (i = 0; i < 2000; i++) {
+ x = Math.floor(Math.random() * (width - 1));
+ y = Math.floor(Math.random() * (height - 1));
+ pixel = image.getPixel(x, y);
+ pixel.setRed(255);
+ pixel.setGreen(0);
+ pixel.setBlue(0);
+}
+for (i = 0; i < 1000; i++) {
+ x = Math.floor(Math.random() * (width - 1));
+ y = Math.floor(Math.random() * (height - 1));
+ pixel = image.getPixel(x, y);
+ pixel.setRed(0);
+ pixel.setGreen(0);
+ pixel.setBlue(255);
+}
+print(image);
+// Your code is here
+for(n=0;n<image.getWidth()-3;n++) {
+for(m=0;m<image.getHeight()-3;m++) {
+pixel1=image.getPixel(n,m)
+pixel2=image.getPixel(n+1,m)
+pixel3=image.getPixel(n+2,m)
+pixel4=image.getPixel(n,m+1)
+pixel5=image.getPixel(n+1,m+1)
+pixel6=image.getPixel(n+2,m+1)
+pixel7=image.getPixel(n,m+2)
+pixel8=image.getPixel(n+1,m+2)
+pixel9=image.getPixel(n+2,m+2)
+red1=pixel1.getRed()
+red2=pixel2.getRed()
+red3=pixel3.getRed()
+red4=pixel4.getRed()
+red5=pixel5.getRed()
+red6=pixel6.getRed()
+red7=pixel7.getRed()
+red8=pixel8.getRed()
+red9=pixel9.getRed()
+green1=pixel1.getGreen()
+green2=pixel2.getGreen()
+green3=pixel3.getGreen()
+green4=pixel4.getGreen()
+green5=pixel5.getGreen()
+green6=pixel6.getGreen()
+green7=pixel7.getGreen()
+green8=pixel8.getGreen()
+green9=pixel9.getGreen()
+blue1=pixel1.getBlue()
+blue2=pixel2.getBlue()
+blue3=pixel3.getBlue()
+blue4=pixel4.getBlue()
+blue5=pixel5.getBlue()
+blue6=pixel6.getBlue()
+blue7=pixel7.getBlue()
+blue8=pixel8.getBlue()
+blue9=pixel9.getBlue()
+var red=[red1,red2,red3,red4,red5,red6,red7,red8,red9]
+var green=[green1,green2,green3,green4,green5,green6,green7,green8,green9]
+var blue=[blue1,blue2,blue3,blue4,blue5,blue6,blue7,blue8,blue9]
+red.sort(function(a,b){return a-b})
+green.sort(function(a,b){return a-b})
+blue.sort(function(a,b){return a-b})
+//red.sort();
+//green.sort();
+//blue.sort();
+pixel5.setRed(red[4])
+pixel5.setGreen(green[4])
+pixel5.setBlue(blue[4])
+}
+}
+
+// End of your code
+ print(image);
+ 

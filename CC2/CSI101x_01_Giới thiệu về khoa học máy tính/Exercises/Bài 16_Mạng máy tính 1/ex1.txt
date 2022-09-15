@@ -1,0 +1,1 @@
+Waits for the ethernet wire to be quiet.

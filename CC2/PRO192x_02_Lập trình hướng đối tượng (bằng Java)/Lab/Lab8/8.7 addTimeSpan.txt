@@ -1,0 +1,8 @@
+public void add(TimeSpan span) {
+    this.hours = span.hours + this.hours;
+    this.minutes = span.minutes + this.minutes;
+    if (this.minutes >= 60) {
+        this.minutes = this.minutes - 60;
+        this.hours += 1;
+    }
+}

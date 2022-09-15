@@ -1,0 +1,10 @@
+image = new SimpleImage("51020-poppy.png");
+
+for (pixel: image) {
+  // Your code here
+  pixel.setRed(pixel.getRed() * 10);
+  pixel.setGreen(pixel.getGreen() * 5);
+  pixel.setBlue(pixel.getBlue() * 20);
+}
+
+print(image);

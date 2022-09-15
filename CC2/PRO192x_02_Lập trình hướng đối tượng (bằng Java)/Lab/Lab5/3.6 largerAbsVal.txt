@@ -1,0 +1,5 @@
+public static int largerAbsVal (int x, int y) {
+    x = Math.abs(x);
+    y = Math.abs(y);
+    return Math.max(x, y);
+}

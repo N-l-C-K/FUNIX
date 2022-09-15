@@ -1,0 +1,16 @@
+public static void printGPA() {
+    Scanner input = new Scanner(System.in);
+    System.out.print("Enter a student record: ");
+    
+    String name = input.next();
+    int total = input.nextInt();
+    double sum = 0;
+    double avg = 0;
+    
+    for(int i = 1; i <= total; i++) {
+        int scores = input.nextInt();
+        sum += scores;
+        avg = sum/total;
+    }
+    System.out.print(name + "'s grade is " + avg);
+}

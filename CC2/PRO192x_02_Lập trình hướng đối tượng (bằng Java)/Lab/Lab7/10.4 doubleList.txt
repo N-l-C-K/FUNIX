@@ -1,0 +1,5 @@
+public static void doubleList (ArrayList<String> myList) {
+    for (int i = 0; i < myList.size(); i+=2) {
+        myList.add(i, myList.get(i));
+    }
+}

@@ -1,0 +1,13 @@
+image = new SimpleImage("flowers.jpg");
+
+for (pixel: image) {
+  x = pixel.getX(); //lấy toàn bộ hoành độ
+  width = image.width; //lấy chiều rộng
+  halfWidth = parseInt(width/2); //lấy 1/2 ảnh
+
+  if (x >= halfWidth){
+      pixel.setBlue(pixel.getBlue() * 2);
+  }
+}
+
+print(image);

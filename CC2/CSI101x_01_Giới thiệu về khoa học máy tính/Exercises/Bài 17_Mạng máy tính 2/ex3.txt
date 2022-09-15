@@ -1,0 +1,1 @@
+Sends a "are you there" packet to a computer, getting back a "yes" packet

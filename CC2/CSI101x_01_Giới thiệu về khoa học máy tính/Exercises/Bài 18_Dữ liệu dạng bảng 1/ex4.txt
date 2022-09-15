@@ -1,0 +1,7 @@
+table = new SimpleTable("baby-2010.csv");
+for (row: table) {
+  if(row.getField("rank") > 950) {
+     print(row);
+  }
+  
+}

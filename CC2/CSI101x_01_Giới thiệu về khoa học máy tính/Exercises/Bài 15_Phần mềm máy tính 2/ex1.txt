@@ -1,0 +1,1 @@
+Translates C++ source code into machine code

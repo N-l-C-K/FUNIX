@@ -1,0 +1,1 @@
+The sound signals mix in the air, forming a sum signal. The ear takes in this sum and recovers the original signals.

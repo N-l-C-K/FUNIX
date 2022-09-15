@@ -1,0 +1,8 @@
+table = new SimpleTable("baby-2010.csv");
+count = 0;
+for (row: table) {
+  if(row.getField("name").startsWith("O")) {
+     count=count + 1;
+  }
+}
+print("count:" + count);

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 3</title>
+    <link href="project3.css
+    " rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Galada&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="project3.js"></script>
+</head>
+<body>
+    <h1> Class Marksheet</h1>
+    <form>
+        <label for="name">Họ tên</label>
+        <input id="name" type="text" name="name" required><br>
+
+        <label for="maths">Điểm toán</label>
+        <input id="maths" type="number" name="maths" required><br>
+
+        <label for="physics">Điểm lý</label>
+        <input id="physics" type="number" name="physics" required><br>
+
+        <label for="chemistry">Điểm hóa</label>
+        <input id="chemistry" type="number" name="chemistry" required><br>
+        <div class="buttons-list">
+            <button id="input">Nhập</button>
+        </div>
+    </form>
+
+    <table id="table">
+        <thead >
+            <tr class="grid-container">
+                <th class="class="grid-item"">STT</th>
+                <th class="class="grid-item"">Họ tên</th>
+                <th class="class="grid-item"">Toán</th>
+                <th class="class="grid-item"">Lý</th>
+                <th class="class="grid-item"">Hóa</th>
+                <th class="class="grid-item"">Trung bình</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <div class="buttons-list">
+        <button id="average">Tính điểm trung bình</button>
+        <button id="excellentStudents">Xác định học sinh giỏi</button>
+        <button id="goodStudents">Xác định học sinh khá</button>
+        <button id="remove">Xóa học sinh mới thêm</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,7 @@
+public static int largestAbsVal (int x, int y, int z) {
+    x = Math.abs(x);
+    y = Math.abs(y);
+    z = Math.abs(z);
+    int max1 = Math.max(x, y);
+    return Math.max(max1, z);
+}

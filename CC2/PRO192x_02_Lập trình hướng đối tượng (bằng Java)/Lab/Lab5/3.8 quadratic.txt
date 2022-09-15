@@ -1,0 +1,11 @@
+public static String quadratic(int a, int b, int c) {
+    double x1 = (-b + Math.sqrt(b * b - (4 * a * c))) / (2 * a);
+    double x2 = (-b - Math.sqrt(b * b - (4 * a * c))) / (2 * a);
+    String ans1 = "First root = " + x1;
+    String ans2 = "Second root = " + x2;
+    //Strong result = ans1 + ans2;
+    System.out.println(ans1);
+    System.out.println(ans2);
+    return ans1;
+    //return ans2;
+}

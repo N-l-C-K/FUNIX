@@ -1,0 +1,113 @@
+
+/*    --------- For Mobile ---------   */
+#nav-bar {
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    z-index: 100;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    overflow: auto;
+    overflow: hidden;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.205);
+}
+label.logo {
+    display: inline-block;
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 70px;
+    padding: 0 30px;
+    border-right: 1px solid rgba(255, 255, 255, 0.205);
+}
+label.logo a {
+    color: white;
+    text-transform: uppercase;
+    opacity: 1 !important;
+}
+label.checkbtn {
+    display: block;
+    font-size: 30px;
+    color: white;
+    float: right;
+    margin-right: 30px;
+    line-height: 70px;
+    cursor: pointer;
+}
+.nav-list {
+    display: block;
+}
+.nav-list a {
+    display: block;
+    font-size: 20px;
+    color: white;
+    text-transform: uppercase;
+    margin: 50px 0;
+}
+.nav-list a:active,a:active {
+    color: lightseagreen;
+}
+.nav-list {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    background: #2c3e50;
+    top: 70px;
+    left: -100%;
+    text-align: center;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+}
+#check {
+    display: none;
+}
+#check:checked ~ .nav-list {
+    left: 0;
+}
+
+/*    --------- For Desktop ---------   */
+@media only screen and (min-width: 992px) {
+    #nav-bar {
+        position: fixed;
+        width: 100%;
+        height: 70px;
+        z-index: 100;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.4);
+        overflow: auto;
+        overflow: hidden;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.205);
+    }
+    label.logo {
+        display: inline-block;
+        font-size: 30px;
+        font-weight: bold;
+        line-height: 70px;
+        padding: 0 30px;
+        border-right: 1px solid rgba(255, 255, 255, 0.205);
+    }
+    label.logo a {
+        color: white;
+        opacity: 1 !important;
+    }
+    #nav-bar .nav-list {
+        position: initial;
+        float: right;
+        width: auto;
+        text-transform: uppercase;
+        background-color: unset;
+    }
+    #nav-bar .nav-list a {
+        display: inline-block;
+        color: white;
+        font-size: 18px;
+        margin: 0;
+        padding: 25px;
+    }
+    #nav-bar .nav-list a:hover {
+        color: black;
+        background-color: white;
+    }
+    label.checkbtn {
+        display: none;
+    }
+}

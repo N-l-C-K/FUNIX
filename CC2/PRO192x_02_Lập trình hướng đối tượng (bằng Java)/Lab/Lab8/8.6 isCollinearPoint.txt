@@ -1,0 +1,8 @@
+public boolean isCollinear(Point p1, Point p2) {
+    if (this.x == p1.x && this.x == p2.x) {
+        return true;
+    }
+    double slope3 = (this.y - p1.y)/(this.x - p1.x);
+    double slope4 = (this.y - p2.y)/(this.x - p2.x);
+    return slope3 == slope4;
+}

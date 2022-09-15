@@ -1,0 +1,19 @@
+public static int mode(int[] a1) { //define method mode.
+    int[] a = new int[101]; //define array.
+    int i, mode = 0,counts = 0; //define variable.
+ 
+    for (i = 0; i <a1.length; i++) {//loop  
+        a[a1[i]]++; //increasing value.
+        System.out.println(a[a1[i]]);
+    }
+    System.out.println("---------------");
+    for (i = 0; i <a.length; i++) {//loop  
+        if (a[i]>counts) {//if block
+            counts=a[i]; //variable holds array value.
+            mode = i; //variable holds i value.
+            System.out.println(mode);
+        }
+    }
+    
+    return mode;
+}

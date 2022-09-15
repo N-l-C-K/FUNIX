@@ -1,0 +1,15 @@
+for (int x = 1; x <= 40; x++) {
+    System.out.print("-");
+}
+System.out.println();
+for (int y = 1; y <= 10; y++) {
+    System.out.print("_-^-");
+}
+System.out.println();
+for (int i = 1; i <= 2; i++) {
+    System.out.print("11223344556677889900");
+}
+System.out.println();
+for (int x = 1; x <= 40; x++) {
+    System.out.print("-");
+}

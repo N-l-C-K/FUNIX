@@ -1,0 +1,14 @@
+public static double percentEven (int[] arr) {
+    double elementPercent = 100.0/arr.length;
+    int evenCount = 0;
+    
+    for (int i = 0; i < arr.length; i++) {
+        if (arr[i]%2 == 0) {
+            evenCount++;
+        } 
+    }
+    if (evenCount == 0) {
+        return 0.0;
+    }
+    return evenCount * elementPercent;
+}

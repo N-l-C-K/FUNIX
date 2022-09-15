@@ -1,0 +1,66 @@
+<html>
+<head>
+<title>JavaScript Login</title>
+
+<Script Language="JavaScript">
+    var attempt = 3; // Variable to count number of attempts.
+    // Below function Executes on click of login button.
+    function validate() {
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+
+        if (username == "" && password == "") {                                
+          alert("Please enter username and password");  //Alert nếu không nhập username và password
+        } else if (username == "") {
+          alert("Missing Username");                    //Alert nếu không nhập username      
+        } else if (password == "") {
+          alert("Missing Password");                    //Alert nếu không nhập username 
+        } else if (password.length < 6) {               //Alert nếu password ít hơn 6 kí tự 
+          alert("Password is too short, please input at least 6 characters!");
+        } else if (username == "admin" && password == "password") {
+          window.location = "default.html";             //Trả về trang defautl.html nếu nhập đúng username và password
+        } else {                                        //Disable input fields after 3 attempts
+          if (attempt == 0) {
+            document.getElementById("username").disabled = true;
+            document.getElementById("password").disabled = true;
+          } else {
+            attempt--;
+            document.getElementById("warning").innerHTML = "* You have " + attempt + " attempt left";
+          }
+        }
+
+       
+
+    }
+</Script>
+
+</head>
+<body>
+
+<h2 font face="Georgia, Garamond, Times New Roman" color="#FF0000">
+  Login Form</h2>
+
+<font face="Verdana, Tahoma, Arial" size="3">
+<form name="CreditApplication">
+  <table border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td width="100">User Name:</td>
+      <td><input type="text" name="username" id="username"/></td>
+    </tr>
+    <tr>
+      <td width="100">Password:</td>
+      <td><input type="password" name="password" id="password"/></td>
+    </tr>
+    <tr>
+      <td width="100"><br><br></td>
+      <td>
+        <input type="button" value="Login" id="submit" onclick="validate()"/>
+      </td>
+    </tr>
+  </table>
+  <p id="warning" style="color: red;"></p>
+</form>
+</font>
+
+</body>
+</html>

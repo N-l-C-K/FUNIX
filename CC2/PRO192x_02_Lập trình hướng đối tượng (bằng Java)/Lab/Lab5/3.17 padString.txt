@@ -1,0 +1,15 @@
+public static String padString(String s, int range) {
+    //t spaces = range - s.length();
+    //String s = "";
+    if (range <= s.length()) {
+        System.out.print(s);
+    } else {
+        int spaces = (range - s.length());
+        String blank = "";
+        for (int i = 1; i <= spaces; i++) {
+            blank += " ";
+        }
+        s = blank + s;
+    }
+    return s;
+}

@@ -1,0 +1,11 @@
+public static double pay (double n, int hours) {
+    double salary = 0;
+    double overtime = 0;
+    if (hours > 8 ) {
+        overtime = (n + n/2) * (hours - 8);
+        salary = n * 8 + overtime;
+    } else {
+        salary = n * hours;
+    }
+    return salary;
+}

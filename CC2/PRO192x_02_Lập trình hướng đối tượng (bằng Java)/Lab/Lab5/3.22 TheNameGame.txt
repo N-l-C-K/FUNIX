@@ -1,0 +1,20 @@
+public class TheNameGame {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("What is your name? ");
+        String first = input.next();
+        String last = input.next();
+        String newFirst = first.substring(1);
+        String newLast = last.substring(1);
+        
+        song(first, newFirst);
+        System.out.println();
+        song(last, newLast);
+    }
+    public static void song(String name, String newName) {
+        System.out.println(name + " " + name + ", bo-B" + newName);
+        System.out.println("Banana-fana fo-F" + newName);
+        System.out.println("Fee-fi-mo-M" + newName);
+        System.out.println(name.toUpperCase() + "!");
+    }
+}

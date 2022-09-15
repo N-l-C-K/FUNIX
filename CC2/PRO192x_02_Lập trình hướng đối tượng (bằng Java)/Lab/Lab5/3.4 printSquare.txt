@@ -1,0 +1,12 @@
+public static void printSquare(int min, int max) {
+    for (int row = min; row <= max; row++) {
+        for (int range1 = row; range1 <= max; range1++) {
+            System.out.print(range1);
+        }
+        for (int range2 = min; range2 < row; range2++) {
+            System.out.print(range2);
+        }
+        System.out.println();
+    }
+    
+}

@@ -1,0 +1,10 @@
+image = new SimpleImage("51020-stop-sky.png");
+
+for (pixel: image) {
+  // Your code here
+  pixel.setRed(pixel.getRed() * 20);
+  pixel.setGreen(pixel.getGreen() * 10);
+  pixel.setBlue(pixel.getBlue() * 5);
+}
+
+print(image);
